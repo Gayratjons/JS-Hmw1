@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <script>
+    function countLike(a) 
+    {
+        let b = "dislike".length;
+        let c = "like".length;
+        let countLike = 0;
+        let countDisLike = 0;
+        for (let i = 0; i < a.length; i++) {
+            if (a[i].length == b) {
+                countDisLike += 1;
+            } else {
+                countLike += 1;
+            }            
+        }
+        // if (countLike > countDisLike)
+        // {
+        //     console.log("Like kop");
+        // } else if (countDisLike == countLike)
+        // {
+        //     console.log("teng");
+        // }
+        // else{
+        //     console.log("dis Like kop");
+        // }
+        if (countLike == countDisLike) {
+            return "Hech narsa mavjud emas";
+        }else{
+            return "Like: "+countLike  + " ; " + "DisLike: " + countDisLike;
+        }
+    }
+    console.log(countLike(["dislike","like","like","dislike"]));
+    </script>
+</body>
+</html>
